@@ -1,0 +1,19 @@
+var count = 1;
+var spot = 0;
+var string = ""
+var size = 12;
+while (count < size*size) {
+while (spot <= size){
+ if (count % 2 != 0){
+   string += " ";}
+  else if (count % 2 == 0) {
+    string += "Chip";}
+  spot++;
+  count++;
+} 
+  string += "\n"
+  spot = 0;
+}
+  
+
+console.log(string)
