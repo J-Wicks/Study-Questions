@@ -1,0 +1,4 @@
+var string = ""
+for(var count = 0; count <= 7; count++) {
+ string += "#"; 
+  console.log(string);}// Your code here.
