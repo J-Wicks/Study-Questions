@@ -1,0 +1,16 @@
+
+function countChar(theString, theLetter){
+  
+  var Slength = theString.length;
+  var bees = 0;
+  var count = 0;
+  	while (count <= Slength){
+      if(theString.charAt(count) == theLetter){
+        bees++;
+        count++}
+      else 
+        count++
+      
+      }
+ return bees; }
+ 
