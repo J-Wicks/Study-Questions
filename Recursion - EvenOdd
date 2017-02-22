@@ -1,0 +1,8 @@
+function isEven(val) {
+var val = Math.abs(val);  
+    if(val == 0)
+      return "Even";
+    else if (val == 1) 
+      return "Odd";
+    else  {return(isEven(val-2)) };
+  }
