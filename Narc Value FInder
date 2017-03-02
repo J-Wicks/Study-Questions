@@ -1,0 +1,18 @@
+
+function getlength(number){
+	return number.toString().length;
+}
+function numbercharat(number, i){
+	var numberstring = number.toString();
+	return Number(numberstring.charAt(i));
+}
+
+
+function narcval(value){
+var nactotal = 0;
+for(var i = 0; i < getlength(value); i++){
+nactotal += Math.pow(numbercharat(value, i),getlength(value))}
+return nactotal;
+}
+
+console.log(narcval(111));
