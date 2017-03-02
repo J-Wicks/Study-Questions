@@ -1,0 +1,14 @@
+function dupesplice(string,index){
+
+	return string.split(string.charAt(index)).join("")
+}
+
+function dupefinder(string){
+	var dupes = [];
+	for(var i = 0; i <= string.length; i++){
+		if(dupesplice(string,i).length < (string.length - 1))
+			dupes.push(string.charAt(i).toLowerCase());
+			;
+	}
+	return dupes;
+}
